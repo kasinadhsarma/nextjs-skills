@@ -21,6 +21,10 @@ A curated reference library of Next.js (App Router) architecture patterns, cachi
 | [Payments Security (Razorpay + UCP)](docs/Payments%20Security%20%28Razorpay%20%2B%20UCP%29.md) | Server-side price computation, HMAC signature verification, signed webhooks, paise/rupee unit boundaries | ~150 |
 | [Authentication Patterns (Firebase)](docs/Authentication%20Patterns%20%28Firebase%29.md) | Firebase client SDK, `AuthProvider` context, server-side `verifyIdToken` + UID-match ownership check | ~140 |
 | [Profile & Account Patterns](docs/Profile%20%26%20Account%20Patterns.md) | Deterministic profile doc ID, idempotent creation, addresses/orders sub-resources — **includes an unresolved IDOR finding** | ~140 |
+| [Authentication (NextAuth / Auth.js)](docs/Authentication%20%28NextAuth%20Auth.js%29.md) | v4 vs v5, Edge-safe split config, session strategies, callbacks, middleware route protection | ~170 |
+| [Testing Strategies](docs/Testing%20Strategies.md) | What's unit-testable (Client Components, Server Actions) vs what needs Playwright E2E, Vitest setup | ~160 |
+| [Performance Profiling And Bundle Analysis](docs/Performance%20Profiling%20And%20Bundle%20Analysis.md) | `@next/bundle-analyzer`, fixing misplaced `"use client"` boundaries, `next/dynamic`, reading `next build` output | ~150 |
+| [Internationalization](docs/Internationalization.md) | `[locale]` segment + middleware pattern, `next-intl` setup, static generation per locale | ~160 |
 | [Next.js Primitive Picker Skill](docs/skills.md) | Agent skill: decision tree for Server/Client Component, Server Action, Route Handler, or Middleware | ~180 |
 
 ---
@@ -67,6 +71,10 @@ nextjs-skills/
 │   ├── Payments Security (Razorpay + UCP).md
 │   ├── Authentication Patterns (Firebase).md
 │   ├── Profile & Account Patterns.md
+│   ├── Authentication (NextAuth Auth.js).md
+│   ├── Testing Strategies.md
+│   ├── Performance Profiling And Bundle Analysis.md
+│   ├── Internationalization.md
 │   └── skills.md                          ← agent skill (primitive picker)
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
@@ -105,10 +113,10 @@ nextjs-skills/
 | Authentication patterns (Firebase Auth + ID token verification) | Done |
 | Profile & account patterns (deterministic IDs, sub-resource auth) | Done |
 | Next.js primitive picker (agent skill) | Done |
-| NextAuth/Auth.js deep dive | Planned |
-| Testing strategies (Playwright, Vitest with App Router) | Planned |
-| Performance profiling & bundle analysis | Planned |
-| Internationalization (i18n routing) | Planned |
+| NextAuth/Auth.js deep dive | Done |
+| Testing strategies (Playwright, Vitest with App Router) | Done |
+| Performance profiling & bundle analysis | Done |
+| Internationalization (i18n routing) | Done |
 
 Want to add a topic? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
