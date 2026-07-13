@@ -3,7 +3,7 @@
 A curated reference library of Next.js (App Router) architecture patterns, caching semantics, API/middleware guides, deployment references, and AI-agent skills — maintained under a strict **1,000-line-per-document** discipline so that every guide fits in a single LLM context window.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Next.js](https://img.shields.io/badge/Next.js-15.x-000000?logo=next.js)](https://nextjs.org)
+[![Next.js](https://img.shields.io/badge/Next.js-15.x%20%7C%2016.x-000000?logo=next.js)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)](https://www.typescriptlang.org)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -14,7 +14,8 @@ A curated reference library of Next.js (App Router) architecture patterns, cachi
 | Document | Purpose | Lines |
 |---|---|---|
 | [App Router Fundamentals](docs/App%20Router%20Fundamentals.md) | File conventions, layouts, Server/Client Components, loading/error states, route groups, parallel & intercepting routes | ~150 |
-| [Data Fetching And Caching](docs/Data%20Fetching%20And%20Caching.md) | `fetch` caching (14 vs 15 default flip), ISR, `revalidatePath`/`revalidateTag`, Server Actions, streaming with Suspense | ~150 |
+| [Data Fetching And Caching](docs/Data%20Fetching%20And%20Caching.md) | `fetch` caching (14 vs 15 default flip), ISR, `revalidatePath`/`revalidateTag`, Server Actions, streaming with Suspense — **pre-16 model** | ~155 |
+| [Cache Components And Partial Prerendering (Next.js 16)](docs/Cache%20Components%20And%20Partial%20Prerendering%20%28Next.js%2016%29.md) | `'use cache'`/`cacheLife`/`cacheTag`/`updateTag`, migration map from route segment configs, component-level static/dynamic spectrum | ~170 |
 | [API Routes And Middleware](docs/API%20Routes%20And%20Middleware.md) | Route handlers, `middleware.ts`, Edge vs Node runtime, auth patterns | ~140 |
 | [Deployment And Config](docs/Deployment%20And%20Config.md) | `next.config.ts`, env vars, image/font optimization, Vercel and Firebase App Hosting deploys | ~130 |
 | [Tailwind Patterns Architecture](docs/Tailwind%20Patterns%20Architecture.md) | Tailwind v4 + `lib/responsive/patterns/` folder, two-layer page/component convention, migration gotchas | ~140 |
@@ -65,6 +66,7 @@ nextjs-skills/
 ├── docs/
 │   ├── App Router Fundamentals.md
 │   ├── Data Fetching And Caching.md
+│   ├── Cache Components And Partial Prerendering (Next.js 16).md
 │   ├── API Routes And Middleware.md
 │   ├── Deployment And Config.md
 │   ├── Tailwind Patterns Architecture.md
@@ -96,7 +98,7 @@ nextjs-skills/
 3. **Working code, not pseudocode** — every snippet compiles and runs against current stable Next.js
 4. **Agent-readable structure** — headings, tables, and code blocks are used consistently so agents can parse intent from structure
 5. **No citation noise** — sources inform the content; they don't clutter it
-6. **Version-aware** — caching and typing semantics changed between Next.js 14 and 15; every doc that's affected calls this out explicitly rather than assuming one version
+6. **Version-aware** — caching and typing semantics changed between Next.js 14 and 15, and again with Cache Components in Next.js 16; every doc that's affected calls this out explicitly rather than assuming one version
 
 ---
 
@@ -117,8 +119,12 @@ nextjs-skills/
 | Testing strategies (Playwright, Vitest with App Router) | Done |
 | Performance profiling & bundle analysis | Done |
 | Internationalization (i18n routing) | Done |
+| Cache Components & Partial Prerendering (Next.js 16) | Done |
+| SEO (metadata, sitemaps, JSON-LD) | Planned |
+| Content Security Policy | Planned |
+| Multi-tenant / Multi-zones architecture | Planned |
 
-Want to add a topic? See [CONTRIBUTING.md](CONTRIBUTING.md).
+Want to add a topic? See [CONTRIBUTING.md](CONTRIBUTING.md). Topic list is cross-checked against the [official Next.js guides index](https://nextjs.org/docs/app/guides) to catch gaps.
 
 ---
 

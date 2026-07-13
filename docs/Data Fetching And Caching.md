@@ -2,6 +2,8 @@
 
 `fetch` caching, ISR, Server Actions, and streaming in the App Router. Caching semantics changed significantly between Next.js 14 and 15 — verify the installed version before assuming defaults.
 
+> **Next.js 16 with `cacheComponents: true` uses a different model entirely** — route segment configs (`dynamic`, `revalidate`, `fetchCache`) and `unstable_cache` are replaced by the `'use cache'` directive. If the project has that flag enabled, read [Cache Components And Partial Prerendering (Next.js 16)](Cache%20Components%20And%20Partial%20Prerendering%20%28Next.js%2016%29.md) instead — this doc covers the pre-16 / non-`cacheComponents` model, which is still what most existing projects run on.
+
 ```mermaid
 flowchart LR
     A["fetch() call in a\nServer Component"] --> B{"Next.js version?"}
