@@ -47,7 +47,7 @@ Folder naming conventions:
 flowchart LR
     A["Component in app/"] --> B{"Needs hooks,\nevent handlers, or\nbrowser APIs?"}
     B -- No --> C["Leave as Server Component\n(default, zero client JS)"]
-    B -- Yes --> D["Add \"use client\"\nat top of file"]
+    B -- Yes --> D["Add 'use client'\nat top of file"]
     D --> E["Everything imported here\nbecomes part of the client bundle\n(unless it has its own boundary)"]
 ```
 

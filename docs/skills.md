@@ -33,8 +33,8 @@ agent_notes: >
 ```mermaid
 flowchart TD
     Start["New feature request"] --> Q1{"Does it need\ninteractivity\n(hooks, onClick,\nbrowser APIs)?"}
-    Q1 -- No --> SC["Server Component\n(default — no \"use client\")"]
-    Q1 -- Yes --> CC["Client Component\n(\"use client\" at the leaf)"]
+    Q1 -- No --> SC["Server Component\n(default — no 'use client')"]
+    Q1 -- Yes --> CC["Client Component\n('use client' at the leaf)"]
 
     CC --> Q2{"Does it submit\ndata / mutate state?"}
     Q2 -- No --> Done1["Done — plain interactive UI"]
