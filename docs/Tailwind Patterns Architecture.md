@@ -1,6 +1,6 @@
 # Tailwind Patterns Architecture
 
-A reusable Next.js styling architecture: Tailwind v4 plus a centralized `lib/responsive/patterns/` folder, and a two-layer `app/<route>/page.tsx` shell + `components/<route>/page.tsx` orchestrator convention. Originated in `ropods-website`; carried over to `cielon-eshop` and other projects that want "one central point" for styling instead of scattered CSS Modules.
+A reusable Next.js styling architecture: Tailwind v4 plus a centralized `lib/responsive/patterns/` folder, and a two-layer `app/<route>/page.tsx` shell + `components/<route>/page.tsx` orchestrator convention.carried over to `cielon-eshop` and other projects that want "one central point" for styling instead of scattered CSS Modules.
 
 ```mermaid
 graph TD
