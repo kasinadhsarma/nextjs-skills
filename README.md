@@ -17,6 +17,7 @@ A curated reference library of Next.js (App Router) architecture patterns, cachi
 | [Data Fetching And Caching](docs/Data%20Fetching%20And%20Caching.md) | `fetch` caching (14 vs 15 default flip), ISR, `revalidatePath`/`revalidateTag`, Server Actions, streaming with Suspense | ~150 |
 | [API Routes And Middleware](docs/API%20Routes%20And%20Middleware.md) | Route handlers, `middleware.ts`, Edge vs Node runtime, auth patterns | ~140 |
 | [Deployment And Config](docs/Deployment%20And%20Config.md) | `next.config.ts`, env vars, image/font optimization, Vercel and Firebase App Hosting deploys | ~130 |
+| [Tailwind Patterns Architecture](docs/Tailwind%20Patterns%20Architecture.md) | Tailwind v4 + `lib/responsive/patterns/` folder, two-layer page/component convention, migration gotchas | ~140 |
 | [Next.js Primitive Picker Skill](docs/skills.md) | Agent skill: decision tree for Server/Client Component, Server Action, Route Handler, or Middleware | ~180 |
 
 ---
@@ -59,6 +60,7 @@ nextjs-skills/
 │   ├── Data Fetching And Caching.md
 │   ├── API Routes And Middleware.md
 │   ├── Deployment And Config.md
+│   ├── Tailwind Patterns Architecture.md
 │   └── skills.md                          ← agent skill (primitive picker)
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
@@ -92,6 +94,7 @@ nextjs-skills/
 | Data fetching & caching (ISR, Server Actions, streaming) | Done |
 | API routes & middleware | Done |
 | Deployment & config (Vercel, Firebase App Hosting) | Done |
+| Tailwind v4 + responsive patterns architecture | Done |
 | Next.js primitive picker (agent skill) | Done |
 | Authentication patterns (NextAuth/Auth.js deep dive) | Planned |
 | Testing strategies (Playwright, Vitest with App Router) | Planned |
