@@ -14,6 +14,7 @@ A curated reference library of Next.js (App Router) architecture patterns, cachi
 | Document | Purpose | Lines |
 |---|---|---|
 | [App Router Fundamentals](docs/App%20Router%20Fundamentals.md) | File conventions, layouts, Server/Client Components, loading/error states, route groups, parallel & intercepting routes | ~150 |
+| [Hooks, use client, and use server](docs/Hooks%2C%20use%20client%2C%20and%20use%20server.md) | Directive mechanics, prop/return-value serialization rules, `useActionState`/`useFormStatus`/`useOptimistic`/`use()` | ~260 |
 | [Data Fetching And Caching](docs/Data%20Fetching%20And%20Caching.md) | `fetch` caching (14 vs 15 default flip), ISR, `revalidatePath`/`revalidateTag`, Server Actions, streaming with Suspense — **pre-16 model** | ~155 |
 | [Cache Components And Partial Prerendering (Next.js 16)](docs/Cache%20Components%20And%20Partial%20Prerendering%20%28Next.js%2016%29.md) | `'use cache'`/`cacheLife`/`cacheTag`/`updateTag`, migration map from route segment configs, component-level static/dynamic spectrum | ~170 |
 | [API Routes And Middleware](docs/API%20Routes%20And%20Middleware.md) | Route handlers, `middleware.ts`, Edge vs Node runtime, auth patterns | ~140 |
@@ -65,6 +66,7 @@ The [primitive picker skill](docs/skills.md) is structured as a Claude Code skil
 nextjs-skills/
 ├── docs/
 │   ├── App Router Fundamentals.md
+│   ├── Hooks, use client, and use server.md
 │   ├── Data Fetching And Caching.md
 │   ├── Cache Components And Partial Prerendering (Next.js 16).md
 │   ├── API Routes And Middleware.md
@@ -120,6 +122,7 @@ nextjs-skills/
 | Performance profiling & bundle analysis | Done |
 | Internationalization (i18n routing) | Done |
 | Cache Components & Partial Prerendering (Next.js 16) | Done |
+| Hooks, `use client`, and `use server` deep dive | Done |
 | SEO (metadata, sitemaps, JSON-LD) | Planned |
 | Content Security Policy | Planned |
 | Multi-tenant / Multi-zones architecture | Planned |

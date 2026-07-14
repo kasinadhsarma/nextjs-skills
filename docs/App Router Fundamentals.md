@@ -1,6 +1,6 @@
 # App Router Fundamentals
 
-The `app/` directory conventions in Next.js 13+ (App Router), current through Next.js 15. Covers file conventions, layouts, Server vs Client Components, loading/error states, route groups, and parallel/intercepting routes.
+The `app/` directory conventions in Next.js 13+ (App Router), current through Next.js 15. Covers file conventions, layouts, Server vs Client Components, loading/error states, route groups, and parallel/intercepting routes. For a deeper dive into the `"use client"`/`"use server"` directives themselves and the hooks that pair with them, see [Hooks, use client, and use server](Hooks%2C%20use%20client%2C%20and%20use%20server.md).
 
 ```mermaid
 graph TD
